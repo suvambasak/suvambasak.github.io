@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Suvam Basak | About</title>
+    <title>Suvam Basak</title>
     <link rel="icon" href="images/logos/IITK_redlogoR.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Suvam Basak</a>
 
@@ -26,25 +28,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="PDFs/resume/suvam_basak.pdf">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
+                        <a class="nav-link" href="#research_work">Research</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="publications.html" id="navbarDarkDropdownMenuLink"
+                        <a class="nav-link dropdown-toggle" href="#publications" id="navbarDarkDropdownMenuLink"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Publications
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="publications.html#conferencepublication">Conferences</a>
+                            <li><a class="dropdown-item" href="#conferencepublication">Conferences</a>
                             </li>
-                            <li><a class="dropdown-item" href="publications.html#journalpublication">Journals</a></li>
-                            <li><a class="dropdown-item" href="publications.html#workshoppublication">Workshops</a></li>
+                            <li><a class="dropdown-item" href="#journalpublication">Journals</a></li>
+                            <li><a class="dropdown-item" href="#workshoppublication">Workshops</a></li>
                         </ul>
                     </li>
 
@@ -52,10 +54,10 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="experience.html">Experience</a>
+                        <a class="nav-link" href="#teaching">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
 
@@ -69,7 +71,6 @@
         </div>
     </nav>
 
-    <br><br>
 
 
     <div class="container">
@@ -110,11 +111,6 @@
                         class="list-group-item list-group-item-action list-group-item-light">
                         <img src="images/logos/LI-In-Bug.png" height="25" width="28">
                         &nbsp <b>Linkedin</b>
-                    </a>
-                    <a href="https://twitter.com/basak_suvam" target="_blank"
-                        class="list-group-item list-group-item-action list-group-item-light">
-                        <img src="images/logos/Twitterlogo-blue.png" height="25" width="28">
-                        &nbsp <b>Twitter</b>
                     </a>
                 </div>
 
@@ -189,8 +185,8 @@
 
 
 
-                <!-- Other -->
-                <div id="other">
+                <!-- News & Activities -->
+                <div id="news_and_activities">
                     <p class="lead">
                     <p class="h3">News & Activities</p>
                     </p>
@@ -226,6 +222,266 @@
                     </div>
                 </div>
 
+
+                <hr>
+                <hr>
+
+                <!-- Research work -->
+                <div id="research_work">
+                    <p class="lead">
+                    <p class="h3">Research work</p>
+                    <hr>
+                    <div class="container">
+
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Unlocking the Secrets of Satellite
+                                            Constellation Design</h5>
+                                        <hr>
+                                        <img src="articles/LEOCONDesign/plots/nwGraph.png" class="card-img-top"
+                                            alt="...">
+                                        <hr>
+                                        <p class="card-text">Unveiling the Secrets of High-Performance LEO Constellation
+                                            Designs: Explore the Nuances of Next-Gen Satellite Networks. <a
+                                                href="articles/LEOCONDesign/UnlockingTheSecretsOfSatelliteConstellationDesign.html"
+                                                target="_blank" class="card-link text-end">Read more</a>
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">April 30, 2024</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">An Integrated and Standards-based Fog
+                                            Computing
+                                            Federation Framework</h5>
+                                        <hr>
+                                        <img src="articles/FogFederationFramework/imgs/orchestration.png"
+                                            class="card-img-top" alt="...">
+                                        <hr>
+                                        <p class="card-text">A framework that builds upon an extension of the OASIS
+                                            TOSCA standard gives the convenience of deploying and undeploying a bunch of
+                                            fog
+                                            services across heterogeneous fog nodes with a single command.
+                                            <a href="articles/FogFederationFramework/AnIntegratedStandardsbasedFogComputingFederationFramework.html"
+                                                target="_blank" class="card-link text-end">Read more</a>
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">June 11, 2022</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <hr>
+                <hr>
+
+
+                <!-- Publications -->
+                <div id="publications">
+                    <p class="lead">
+                    <p class="h3">Publications</p>
+                    <hr>
+
+
+                    <!-- conference publication -->
+                    <div class="container" , id="conferencepublication">
+                        <p class="h5">Conferences</p>
+                        <hr>
+                        <ol>
+                            <li>
+                                S. N. Srirama and <b>S. Basak</b>, "Fog Computing out of the Box with
+                                FogDEFT Framework:
+                                A Case
+                                Study," 2022 IEEE 15th International Conference on Cloud Computing (CLOUD), Barcelona,
+                                Spain, 2022, pp. 342-350, DOI: <a href="https://doi.org/10.1109/CLOUD55607.2022.00057"
+                                    target="_blank">10.1109/CLOUD55607.2022.00057</a>.
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <hr>
+                    <hr>
+
+                    <!-- journal publication -->
+                    <div class="container" , id="journalpublication">
+                        <p class="h5">Journals</p>
+                        <hr>
+                        <ol>
+                            <li>
+                                <b>Basak S</b>, Srirama SN. Fog computing out of the box:
+                                Dynamic
+                                deployment of
+                                fogservice
+                                containers with TOSCA.Int J Network Mgmt. 2023;e2246. DOI:<a
+                                    href="https://doi.org/10.1002/nem.2246" target="_blank">10.1002/nem.2246</a>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <hr>
+                    <hr>
+
+                    <!-- workshop publication -->
+
+                    <div class="container" , id="workshoppublication">
+                        <p class="h5">Workshops</p>
+                        <hr>
+                        <ol>
+                            <li>
+                                <b>Suvam Basak</b>, Amitangshu Pal, and Debopam Bhattacherjee. 2023.
+                                Exploring
+                                Low-Earth
+                                Orbit
+                                Network Design. In Proceedings of the 1st ACM Workshop on LEO Networking and
+                                Communication. Association for Computing Machinery, New York, NY, USA,
+                                1-6. DOI: <a href="https://doi.org/10.1145/3614204.3616103"
+                                    target="_blank">https://doi.org/10.1145/3614204.3616103</a>
+                                - [ <a href="https://youtu.be/PdU3h4PWDVI" target="_blank">Video</a> ]
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <hr>
+                    <hr>
+
+
+                </div>
+
+
+                <!-- Teaching -->
+                <div id="teaching">
+                    <p class="lead">
+                    <p class="h3">Teaching</p>
+                    </p>
+                    <hr>
+
+                    <div class="container">
+                        <p class="h5">Course Instructor, CSJM University (UIET)</p>
+                        <hr>
+                        <ul>
+                            <li>
+                                CSE-S208 - Data Structure Using Python - 2023-24-II
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container">
+                        <p class="h5">Teaching Assistant</p>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="https://www.cse.iitk.ac.in/pages/CS724.html" target="_blank">CS724</a> -
+                                Sensing, Communications and Networking for Smart Wireless Devices - 2023-24-I
+                            </li>
+                            <li>
+                                <a href="https://cse.iitk.ac.in/pages/CS610.html" target="_blank">CS610</a> -
+                                Programming
+                                for
+                                Performance - 2022-23-I
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container">
+                        <p class="h5">Tutorship</p>
+                        <hr>
+                        <ul>
+                            <li>ESC111M/112M - Fundamentals of ComputIng - I & II - 2022-23-II</li>
+                            <li>ESC111A/112A - Fundamentals of Computing - I & II - 2022-23-II</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="container">
+                        <p class="h5">Teaching Assistant - eMasters in Cyber Security</p>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="https://www.cse.iitk.ac.in/users/e-masters/courses/Computer%20Networking%20II.html"
+                                    target="_blank">CS971</a> - Computer Networking II - 2022-23
+                            </li>
+                            <li><a href="https://www.cse.iitk.ac.in/users/e-masters/courses/Computer%20Networking%20I.html"
+                                    target="_blank">CS963</a> - Computer Networking I - 2022-23
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container">
+                        <p class="h5">Teaching Assistant - eMasters in Financial Technology And Management</p>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="https://emasters.iitk.ac.in/course/masters-in-fintech-and-financial-management"
+                                    target="_blank">MBA977</a> - IT Platforms, Cloud Computing, and IoT - 2023-24
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                    <hr>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div id="contact">
+                    <p class="lead">
+                    <p class="h3">Contact Details</p>
+                    </p>
+                    <hr>
+
+                    <div class="container">
+
+                        <div class="container">
+                            <p class="h5">Email</p>
+                            <hr>
+                            <ul>
+                                <li><a href="mailto:suvambasak22@iitk.ac.in">suvambasak22@iitk.ac.in</a></li>
+                                <li><a href="mailto:suvambasak@cse.iitk.ac.in">suvambasak@cse.iitk.ac.in</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="container">
+                            <b class="h5">Postal Address</b><br>
+                            <hr>
+                            Room Number KD-304 (G),<br>
+                            H. R. Kadim Diwan Building,<br>
+                            Department of Computer Science and Engineering,<br>
+                            Indian Institute of Technology Kanpur,<br>
+                            Kanpur-208016, INDIA
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>
@@ -234,13 +490,62 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+
 </body>
 
-<br><br><br>
+
+
 <div class="footer fixed-bottom">
     <footer class="bg-dark text-center text-lg-start text-white">
         <div class="p-3" data-bs-theme="dark">
-            &copy; 2024 Copyright: Suvam Basak, All rights reserved.
+            <div class="d-flex justify-content-between">
+                <div>
+                    Copyright &copy; 2024 Suvam Basak, All rights reserved
+                </div>
+                <div>
+                    <span style="padding-right: 10px; ">
+                        <a href="https://www.linkedin.com/in/suvambasak/" target="_blank">
+                            <img src="images/logos/LI-In-Bug.png" height="25rem" width="25rem">
+                        </a>
+                    </span>
+
+                    <span style="padding-right: 10px;">
+                        <a href="https://scholar.google.com/citations?user=j_JcKdEAAAAJ" target="_blank">
+                            <img src="images/logos/google-scholar-icon.png" height="25rem" width="25rem">
+                        </a>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <a href="https://twitter.com/basak_suvam" target="_blank">
+                            <img src="images/logos/twitter.png" height="25rem" width="25rem">
+                        </a>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <a href="https://github.com/suvambasak" target="_blank">
+                            <img src="images/logos/github-mark-white.png" height="25rem" width="25rem">
+                        </a>
+                    </span>
+                    <!-- <span style="padding-right: 10px;">
+                        <a href="https://www.youtube.com/channel/UCgnSG8JoMryj5PEKG6QHjZQ" target="_blank">
+                            <img src="images/logos/youtube_social_squircle_dark.png" height="27rem" width="27rem">
+                        </a>
+                    </span> -->
+                    <span style="padding-right: 20px;">
+                        <a href="https://www.instagram.com/suvam_basak_/" target="_blank">
+                            <img src="images/logos/Instagram_Glyph_White.png" height="25rem" width="25rem">
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
         </div>
     </footer>
 </div>

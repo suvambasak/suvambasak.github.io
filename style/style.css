@@ -6,3 +6,50 @@ html {
 body {
     padding-top: 6%;
 }
+
+/* Theme variables: dark by default */
+:root {
+    --bg: #0b0d0f;
+    --text: #e6eef6;
+    --muted: #9aa6b2;
+    --card-bg: #0f1416;
+    --link: #9ad1ff;
+}
+
+/* Light theme overrides */
+html.light {
+    --bg: #ffffff;
+    --text: #212529;
+    --muted: #6c757d;
+    --card-bg: #ffffff;
+    --link: #0d6efd;
+}
+
+/* Apply variables globally */
+html,
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text);
+}
+
+a,
+a:hover,
+a:focus {
+    color: var(--link);
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: var(--text);
+}
+
+.theme-toggle-btn {
+    border: 0;
+    background: transparent;
+    color: var(--text);
+}

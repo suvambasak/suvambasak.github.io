@@ -101,6 +101,10 @@
                         </ul>
                     </li>
 
+                    <li class="nav-item">
+                        <a id="themeToggleNav" class="nav-link" role="button">Dark mode</a>
+                    </li>
+
 
 
 
@@ -192,7 +196,7 @@
                 <div class="list-group">
                     <a href="https://github.com/suvambasak" target="_blank"
                         class="list-group-item list-group-item-action list-group-item-light">
-                        <img src="images/logos/github-mark.png" height="25" width="25">
+                        <img src="images/logos/github-mark-white.png" height="25" width="25" id="github-logo">
                         &nbsp <b>GitHub</b>
                     </a>
                     <a href="https://scholar.google.com/citations?user=j_JcKdEAAAAJ" target="_blank"
@@ -970,6 +974,42 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
+    <script>
+        (function () {
+            const htmlEl = document.documentElement;
+            const navToggle = document.getElementById('themeToggleNav');
+
+
+            const githubLogo = document.getElementById('github-logo');
+
+            // Load saved theme, default is 'dark'
+            const saved = localStorage.getItem('site-theme');
+            const theme = saved ? saved : 'dark';
+
+            function applyTheme(t) {
+                if (t === 'light') {
+                    htmlEl.classList.add('light');
+                    htmlEl.setAttribute('data-bs-theme', 'light');
+                    navToggle.textContent = 'Light mode';
+                    githubLogo.src = "images/logos/github-mark.png";
+                } else {
+                    htmlEl.classList.remove('light');
+                    htmlEl.setAttribute('data-bs-theme', 'dark');
+                    navToggle.textContent = 'Dark mode';
+                    githubLogo.src = "images/logos/github-mark-white.png";
+                }
+            }
+
+            applyTheme(theme);
+
+            navToggle.addEventListener('click', function (e) {
+                const isLight = htmlEl.classList.contains('light');
+                const newTheme = isLight ? 'dark' : 'light';
+                applyTheme(newTheme);
+                localStorage.setItem('site-theme', newTheme);
+            });
+        })();
+    </script>
 
 </body>
 
